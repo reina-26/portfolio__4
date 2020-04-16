@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+#fall {
+  background-color: #F2BCAD;
+  height: 100%;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+.logo img{
+  width: 233px;
+  height: 200px;
+  position: center;
+  padding: 60px;
+}
+section .inner div {
+  opacity: 0;
+  -webkit-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-animation-name: Drop;
+  animation-name: Drop;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#momizi .inner div {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 15px;
+  background: url(images/momizi.png) no-repeat;
+}
+
+#momizi .inner div.flake2,
+#momizi .inner div.flake4,
+#momizi .inner div.flake6,
+#momizi .inner div.flake8,
+#momizi .inner div.flake10,
+#momizi .inner div.flake12,
+#momizi .inner div.flake14
+ {
+  background-size: 5px 6px !important;
+}
+
+.flake1 {
+  left: 20px;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.flake2 {
+  left: 40px;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.flake3 {
+  left: 60px;
+  -webkit-animation-duration: 2.9s;
+  animation-duration: 2.9s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.flake4 {
+  left: 80px;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.flake5 {
+  left: 100px;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.flake6 {
+  left: 150px;
+  -webkit-animation-duration: 2.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.flake7 {
+  left: 170px;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.flake8 {
+  left: 200px;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.flake9 {
+  left: 210px;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.flake10 {
+  left: 220px;
+  -webkit-animation-duration: 2.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.flake11 {
+  left: 230px;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.flake12 {
+  left: 240px;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.flake13 {
+  left: 280px;
+  -webkit-animation-duration: 2.9s;
+  animation-duration: 2.9s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.flake14 {
+  left: 300px;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+
+
+@-webkit-keyframes Drop {
+  0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 0;
+  }
+
+  50% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 1;
+  }
+
+  100% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+      opacity: 0.3;
+  }
+}
+
+@keyframes Drop {
+  0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 0;
+  }
+
+  50% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 1;
+  }
+
+  100% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+      opacity: 0.3;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+.btn a {
+  text-align: center;
+  text-decoration: none;
+}
+.ja {
+  background-color: #952525;
+  width: 40%;
+  padding: 10px 20px;
+  color: #F7F2F2;
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.tay {
+  background-color: #952525;
+  width: 40%;
+  padding: 10px 20px;
+  color: #F7F2F2;
+  font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
